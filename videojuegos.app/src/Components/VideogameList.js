@@ -1,6 +1,6 @@
 import React from "react";
 
-const VideogameList = ({ videogame, videogames, setVListUpdated }) => {
+const VideogameList = ({ videogame, videogames, setVListUpdated, setVideogame }) => {
   const handleDelete = (id) => {
     const requestStart = {
       method: "DELETE",
@@ -31,6 +31,13 @@ const VideogameList = ({ videogame, videogames, setVListUpdated }) => {
     fetch("http://localhost:9000/api/" + id, requestStart)
       .then((res) => res.text())
       .then((res) => console.log(res));
+
+    // Videogame state restart
+    setVideogame({
+      title: "",
+      company: "",
+      year: 0,
+    });
 
     setVListUpdated(true);
   };
