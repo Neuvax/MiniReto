@@ -1,0 +1,25 @@
+###
+GET http://localhost:9000/api HTTP/1.1
+
+###
+POST http://localhost:9000/api HTTP/1.1
+Content-Type: application/json
+
+{
+    "title": "Call of Duty: Black Ops 2",
+    "company": "Activision",
+    "year": 2016
+}
+
+###
+DELETE http://localhost:9000/api/1 HTTP/1.1
+
+###
+PUT http://localhost:9000/api/1 HTTP/1.1
+Content-Type: application/json
+
+{
+    "title": "Minecraft",
+    "company": "Microsoft",
+    "year": 2012
+}
