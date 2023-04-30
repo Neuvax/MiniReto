@@ -35,7 +35,6 @@ function App() {
               videogame={videogame}
               videogames={videogames}
               setVListUpdated={setVListUpdated}
-              setVideogame={setVideogame}
             />
           </div>
           <div className="col-5">
