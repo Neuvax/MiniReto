@@ -8,11 +8,14 @@ const routes = require('./routes')
 const app = express()
 app.set('port', process.env.PORT || 9000)
 const dbOptions = {
-    host: 'localhost',
+    database: '',
+    host: '',
     port: 3306,
-    user: 'root',
-    password: 'root123',
-    database: 'library'
+    user: '',
+    password: '',
+    ssl: {
+        rejectUnauthorized: false
+    }
 }
 
 // middlewares -------------------------------------
