@@ -25,7 +25,7 @@ const Form = ({ videogame, setVideogame }) => {
       body: JSON.stringify(videogame),
     };
 
-    fetch("http://localhost:9000/api", requestStart)
+    fetch("https://neuvax.github.io/MiniReto/api", requestStart)
       .then((res) => res.text())
       .then((res) => console.log(res));
 

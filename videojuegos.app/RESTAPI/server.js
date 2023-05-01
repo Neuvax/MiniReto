@@ -8,11 +8,13 @@ const routes = require('./routes')
 const app = express()
 app.set('port', process.env.PORT || 9000)
 const dbOptions = {
-    host: 'localhost',
-    port: 3306,
-    user: 'root',
-    password: 'root123',
-    database: 'library'
+    database: 'videogames',
+    user: '34d5yv45ncv7uhen7w8u',
+    host: 'aws.connect.psdb.cloud',
+    password: 'pscale_pw_vyFSWARjcHQWi56JEuiYUK6Tu8VycffBt3V6J9Mbv3S',
+    ssl: {
+        rejectUnauthorized: false
+    }
 }
 
 // middlewares -------------------------------------

@@ -6,7 +6,7 @@ const VideogameList = ({ videogame, videogames, setVListUpdated, setVideogame })
       method: "DELETE",
     };
 
-    fetch("http://localhost:9000/api/" + id, requestStart)
+    fetch("https://neuvax.github.io/MiniReto/api/" + id, requestStart)
       .then((res) => res.text())
       .then((res) => console.log(res));
 
@@ -28,7 +28,7 @@ const VideogameList = ({ videogame, videogames, setVListUpdated, setVideogame })
       body: JSON.stringify(videogame),
     };
 
-    fetch("http://localhost:9000/api/" + id, requestStart)
+    fetch("https://neuvax.github.io/MiniReto/api/" + id, requestStart)
       .then((res) => res.text())
       .then((res) => console.log(res));
 

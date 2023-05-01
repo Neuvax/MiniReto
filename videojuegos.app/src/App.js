@@ -16,7 +16,7 @@ function App() {
 
   useEffect(() => {
     const getVideogames = () => {
-      fetch("http://localhost:9000/api")
+      fetch("https://neuvax.github.io/MiniReto/api")
         .then((res) => res.json())
         .then((res) => setVideogames(res));
     };
