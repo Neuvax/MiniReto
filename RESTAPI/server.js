@@ -8,11 +8,11 @@ const routes = require('./routes')
 const app = express()
 app.set('port', process.env.PORT || 9000)
 const dbOptions = {
-    database: 'REAC_APP_DATABASE',
-    host: 'REACT_DATA_HOST',
+    database: 'REACT_APP_DATABASE',
+    host: 'REACT_APP_HOST',
     port: 3306,
-    user: 'REACT_DATA_USER',
-    password: 'REACT_DATA_PASSWORD',
+    user: 'REACT_APP_USER',
+    password: 'REACT_APP_PASSWORD',
     ssl: {
         rejectUnauthorized: false
     }
